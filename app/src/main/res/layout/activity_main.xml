@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_ble_connect"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:src="@mipmap/bluetooth_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.freelink.library.widget.TabView
+            android:id="@+id/tabview_fingerprint"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_item_fingerprint"
+            android:clickable="true"
+            app:tabDrawable="@mipmap/fingerprint"
+            app:tabDrawablePadding="4dp"
+            app:tabDrawableSize="40dp"
+            app:tabText="指纹管理"
+            app:tabTextColor="@color/white"
+            app:tabTextSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <com.freelink.library.widget.TabView
+            android:id="@+id/tabview_voice"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_item_voice"
+            android:clickable="true"
+            app:tabDrawable="@mipmap/voice"
+            app:tabDrawablePadding="4dp"
+            app:tabDrawableSize="40dp"
+            app:tabText="声音管理"
+            app:tabTextColor="@color/white"
+            app:tabTextSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="button1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="button2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="button3" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="button4" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

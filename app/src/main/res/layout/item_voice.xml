@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/commonItemHeight"
+    android:background="@drawable/bg_white_selector">
+
+    <TextView
+        android:id="@+id/tv_voice_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:text="声音"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/iv_voice_edit"
+        android:layout_width="@dimen/commonItemHeight"
+        android:layout_height="@dimen/commonItemHeight"
+        android:padding="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/edit"/>
+
+    <ImageView
+        android:id="@+id/iv_voice_recover"
+        android:layout_width="@dimen/commonItemHeight"
+        android:layout_height="@dimen/commonItemHeight"
+        android:padding="8dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_voice_edit"
+        android:scaleType="fitXY"
+        android:src="@mipmap/recover"/>
+
+    <ImageView
+        android:id="@+id/iv_voice_play"
+        android:layout_width="@dimen/commonItemHeight"
+        android:layout_height="@dimen/commonItemHeight"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_voice_recover"
+        android:src="@mipmap/voice_play"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spliteline"
+        android:layout_alignParentBottom="true"
+        android:background="@color/spliteline"/>
+</RelativeLayout>
